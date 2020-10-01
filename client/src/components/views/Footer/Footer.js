@@ -8,7 +8,7 @@ function Footer() {
             flexDirection: 'column', alignItems: 'center',
             justifyContent: 'center', fontSize:'1rem'
         }}>
-           <p> Happy Coding  <Icon type="smile" /></p>
+           <p> “Without a systematic way to start and keep data clean, bad data will happen.” — Donato Diorio <Icon type="smile" /></p>
         </div>
     )
 }

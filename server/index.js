@@ -53,6 +53,7 @@ app.use(cookieParser());
 
 app.use('/api/users', require('./routes/users'));
 app.use('/api/google', require('./routes/subscription'));
+app.use('/api/data', require('./routes/fetchsub'));
 app.get('/auth/callback', 
   passport.authenticate('google', { failureRedirect: '/login' }),
   function(req, res) {

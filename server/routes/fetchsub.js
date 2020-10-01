@@ -4,8 +4,13 @@ const mongoose=require('mongoose');
 const subs=mongoose.model('subs');
 router.get('/fetchdata',(req,res)=>
 {
-	const subs2= subs.find({})
-		console.log(subs2);
+	  subs.find()
+	  .then(result => {
+	  	res.status(200).json({
+	  		data: result
+	  	})
+	  })
+	
 })
 
 module.exports = router;
