@@ -7,7 +7,7 @@ import edit from  './images/edit.jpg';
 import payment from  './images/payment.jpg';
 import  presentfunction from  './images/fun.jpg';
 import firebase from './firebase';
-
+import Subscription from './subs';
 import axios from 'axios';
 
 function LandingPage() {
@@ -84,10 +84,10 @@ function LandingPage() {
        return (
      <div id="afterlogin">
      	<div style={{float:'right'}}>
-     		<div onClick={signInWithGoogle} className="btn btn-success" >New</div>
+     		<div onClick={signInWithGoogle} className="btn btn-success" >New Subscription</div>
      	</div>
      	<div>
-     		
+     		 <Subscription/>
      	</div>
      </div>
     )

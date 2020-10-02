@@ -8,9 +8,11 @@ router.get('/fetchdata',(req,res)=>
 	  .then(result => {
 	  	res.status(200).json({
 	  		data: result
+	  		
 	  	})
 	  })
 	
 })
+
 
 module.exports = router;
