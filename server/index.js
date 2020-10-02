@@ -64,6 +64,7 @@ app.get('/auth/callback',
 //current url
 app.get('/current_user',(req,res)=>{
   res.send(req.user);
+  console.log( globalString);
 })
 
 app.get('/api/logout',(req,res)=>{

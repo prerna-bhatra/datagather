@@ -47,6 +47,7 @@ router.post("/login", (req, res) => {
 
             user.generateToken((err, user) => {
                 if (err) return res.status(400).send(err);
+                global.uid=user._id;
                 res.cookie("w_authExp", user.tokenExp);
                 res
                     .cookie("w_auth", user.token)
